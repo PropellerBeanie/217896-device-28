@@ -12,15 +12,24 @@
     <form action="#" method="get">
       <input type="search" placeholder="Поиск по сайту">
     </form>
-    <a href="">Войти</a>
+    <a href="">Валентин Петухов</a>
+    <a href="">Выйти</a>
     <a href="">Сравнить</a>
     <a href="">Корзина</a>
     <nav>
       <ul>
-        <li><a>Каталог товаров</a></li>
+        <li><a href="">Каталог товаров</a></li>
         <li><a href="">Доставка</a></li>
         <li><a href="">Гарантия</a></li>
         <li><a href="">Контакты</a></li>
+      </ul>
+      <ul>
+        <li><a href="">Виртуальная реальность</a></li>
+        <li><a href="">Фитнес-браслеты</a></li>
+        <li><a href="">Квадрокоптер</a></li>
+        <li><a href="">Моноподы для селфи</a></li>
+        <li><a href="">Умные часы</a></li>
+        <li><a href="">Экшн-камеры</a></li>
       </ul>
     </nav>
   </header>
@@ -33,6 +42,26 @@
     </ul>
     <section>
       <h2>Фильтр для товаров</h2>
+      <form action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Цвет</legend>
+          <ul>
+            <li><input type="checkbox" id="filter-black" name="black" checked><label for="filter-black">Черный</label></li>
+            <li><input type="checkbox" id="filter-white" name="white"><label for="filter-white">Белый</label></li>
+            <li><input type="checkbox" id="filter-blue" name="blue" checked><label for="filter-blue">Синий</label></li>
+            <li><input type="checkbox" id="filter-red" name="red" checked><label for="filter-red">Красный</label></li>
+            <li><input type="checkbox" id="filter-pink" name="pink"><label for="filter-pink">Розовый</label></li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Bluetooth</legend>
+          <ul>
+            <li><input type="radio" id="filter-bluetooth-yes" name="bluetooth" value="yes" checked><label for="filter-bluetooth-yes">Есть</label></li>
+            <li><input type="radio" id="filter-bluetooth-no" name="bluetooth" value="no"><label for="filter-bluetooth-no">Нет</label></li>
+          </ul>
+        </fieldset>
+        <button type="submit">Показать</button>
+      </form>
     </section>
     <section>
       <div>
