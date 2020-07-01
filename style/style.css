@@ -1,0 +1,253 @@
+:root {
+  --basic-black: #000000;
+  --basic-dark: #363636;
+  --basic-grey: #464646;
+  --basic-half-grey: #7e7e7e;
+  --basic-grey-light: #e5e5e5;
+  --basic-white: #ffffff;
+  --special-yellow-dark: #f0c52e;
+  --special-yellow: #f7e296;
+  --special-green: #91c92f;
+  --special-pink: #f6dada;
+}
+
+body {
+  min-width: 1240px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  line-height: 1.2;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--basic-black);
+  border: none;
+  background-color: transparent;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+.main-header {
+  background-color: var(--special-yellow);
+  color: var(--basic-black);
+}
+
+.main-header a {
+  color: var(--basic-black);
+}
+
+.main-header a:hover {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.site-search {
+  opacity: 0.3;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+}
+
+.site-search:hover {
+  opacity: 0.6;
+}
+
+.site-search:focus {
+  opacity: 1;
+}
+
+.site-nav {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.catalog-nav {
+  display: none;
+}
+
+.about-us h2, .contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: 0.2em;
+  color: var(--basic-black);
+}
+
+.about-us ul {
+  list-style: none;
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.75;
+  color: var(--basic-black);
+}
+
+.main-footer {
+  color: var(--basic-white);
+  background-color: var(--basic-dark);
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.main-footer a {
+  color: inherit;
+}
+
+.main-footer .user-nav a {
+  opacity: 0.7;
+}
+
+.main-footer .user-nav a:hover {
+  opacity: 1;
+}
+
+.main-footer .user-nav a:active {
+  opacity: 0.3;
+}
+
+.main-footer .site-nav a:hover {
+  opacity: 0.7;
+}
+
+.main-footer .site-nav a:active {
+  opacity: 0.3;
+}
+
+.log-out a {
+  opacity: 0.3;
+}
+
+/* catalog page styles */
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a, .breadcrumbs-current {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.breadcrumbs a:hover {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+  color: var(--basic-black);
+  opacity: 0.1;
+}
+
+.filter legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.filter input:hover+label {
+  opacity: 0.6;
+}
+
+.filter input:active+label {
+  opacity: 1;
+}
+
+.filter input:disabled+label {
+  opacity: 0.3;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item a {
+  color: inherit;
+}
+
+.catalog-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+  /* text-align: center; */
+  letter-spacing: 0.05em;
+}
+
+.catalog-item-price b {
+  text-align: center;
+}
+
+/* pop-ups */
+.write-us-popup {
+  display: none;
+}
+
+.map-popup {
+  display: none;
+}
