@@ -1,0 +1,27 @@
+.filter legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.filter ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.filter input:hover+label {
+  opacity: 0.6;
+}
+
+.filter input:active+label {
+  opacity: 1;
+}
+
+.filter input:disabled+label {
+  opacity: 0.3;
+}

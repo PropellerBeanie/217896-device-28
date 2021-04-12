@@ -1,0 +1,23 @@
+.catalog__heading {
+  grid-area: catalog-heading;
+}
+
+.breadcrumbs {
+  grid-area: catalog-breadcrumbs;
+}
+
+.catalog__filters {
+  grid-area: catalog-filters;
+}
+
+.catalog__items {
+  grid-area: catalog-items;
+}
+
+.catalog {
+  display: grid;
+  grid-template-areas:
+  "catalog-heading catalog-heading catalog-heading"
+  "catalog-breadcrumbs catalog-breadcrumbs catalog-breadcrumbs"
+  "catalog-filters catalog-items catalog-items";
+}

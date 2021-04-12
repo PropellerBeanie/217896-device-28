@@ -5,11 +5,29 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link href="style/normalize.css" rel="stylesheet">
-  <link href="style/style.css" rel="stylesheet">
+  <link href="style/global--temporary.css" rel="stylesheet">
+  <link href="style/global--fonts.css" rel="stylesheet">
+  <link href="style/global--variables.css" rel="stylesheet">
+  <link href="style/global--.css" rel="stylesheet">
+  <link href="style/blocks--body.css" rel="stylesheet">
+  <link href="style/blocks--main-header.css" rel="stylesheet">
+  <link href="style/blocks--banner.css" rel="stylesheet">
+  <link href="style/blocks--item-sections.css" rel="stylesheet">
+  <link href="style/blocks--info-switcher.css" rel="stylesheet">
+  <link href="style/blocks--brands-list.css" rel="stylesheet">
+  <link href="style/blocks--about-us.css" rel="stylesheet">
+  <link href="style/blocks--main-footer.css" rel="stylesheet">
+  <link href="style/blocks--breadcrumbs.css" rel="stylesheet">
+  <link href="style/blocks--filter.css" rel="stylesheet">
+  <link href="style/blocks--pop-ups.css" rel="stylesheet">
+  <!-- catalog -->
+  <link href="style/blocks--catalog-main.css" rel="stylesheet">
+  <link href="style/blocks--catalog.css" rel="stylesheet">
+
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header visually-hidden">
     <a href="index.html"><img src="img/logo.svg" alt="Logo 'Device'" width="163" height="35"></a>
     <div class="user-nav-row">
       <form action="#" method="get">
@@ -30,25 +48,29 @@
         <li><a href="">Контакты</a></li>
       </ul>
     </nav>
-    <div class="catalog-nav-row">
-      <ul class="catalog-nav">
+    <div class="catalog-nav">
+      <ul class="catalog-nav__col">
         <li><a href="">Виртуальная реальность</a></li>
-        <li><a href="">Фитнес-браслеты</a></li>
-        <li><a href="">Квадрокоптер</a></li>
         <li><a href="">Моноподы для селфи</a></li>
-        <li><a href="">Умные часы</a></li>
         <li><a href="">Экшн-камеры</a></li>
+      </ul>
+      <ul class="catalog-nav__col">
+        <li><a href="">Фитнес-браслеты</a></li>
+        <li><a href="">Умные часы</a></li>
+      </ul>
+      <ul class="catalog-nav__col">
+        <li><a href="">Квадрокоптер</a></li>
       </ul>
     </div>
   </header>
-  <main>
-    <h1 class="visually-hidden">Моноподы для селфи</h1>
+  <main class="catalog wrapper">
+    <h1 class="catalog__heading">Моноподы для селфи</h1>
     <ul class="breadcrumbs">
       <li><a href="index.html">Главная</a></li>
       <li><a href="">Каталог товаров</a></li>
       <li class="breadcrumbs-current">Моноподы для селфи</li>
     </ul>
-    <section class="filters">
+    <section class="catalog__filters">
       <h2 class="catalog-heading">Фильтр:</h2>
       <form class="filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
@@ -74,85 +96,85 @@
         <button class="button" type="submit">Показать</button>
       </form>
     </section>
-    <section class="catalog">
-      <div class="catalog-sort-menu">
-        <h2 class="catalog-heading">Сортировка:</h2>
-        <ul class="catalog-sort-items">
+    <section class="catalog__items">
+      <div class="catalog__sort-menu">
+        <h2 class="catalog__heading">Сортировка:</h2>
+        <ul class="catalog__sort-menu-items">
           <li class="catalog-sort-item"><a href="">По цене</a></li>
           <li class="catalog-sort-item"><a href="">По типу</a></li>
           <li class="catalog-sort-item"><a href="">По популярности</a></li>
         </ul>
-        <ul class="catalog-sort-arrows">
-          <li class="catalog-sort-arrow-up"><a href="" aria-label="По возрастанию"></a></li>
-          <li class="catalog-sort-arrow-down"><a href="" aria-label="По убыванию"></a></li>
+        <ul class="catalog__sort-arrows">
+          <li class="catalog__sort-arrow-up"><a href="" aria-label="По возрастанию"></a></li>
+          <li class="catalog__sort-arrow-down"><a href="" aria-label="По убыванию"></a></li>
         </ul>
       </div>
       <h2 class="visually-hidden">Список товаров</h2>
-      <ul class="catalog-list">
-        <li class="catalog-item">
-          <a href="">
-            <div class="item-image-wrapper">
+      <ul class="catalog__list">
+        <li class="catalog__list-item">
+          <a class="catalog__list-item-link" href="">
+            <div class="catalog__list-item-image-wrapper">
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-              <div class="item-overlay">
+              <div class="catalog__list-item-overlay">
                 <button class="add-to-cart">В корзину</button>
                 <button class="add-to-comparison">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="item-info-wrapper">
+            <div class="catalog__list-item-info-wrapper">
               <h3>Любительская селфи-палка</h3>
-              <b class="catalog-item-price">500руб.</b></p>
+              <b class="catalog__list-item-price">500руб.</b></p>
             </div>
           </a>
         </li>
-        <li class="catalog-item">
-          <a href="">
-            <div class="item-image-wrapper">
+        <li class="catalog__list-item">
+          <a class="catalog__list-item-link" href="">
+            <div class="catalog__list-item-image-wrapper">
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-              <div class="item-overlay">
+              <div class="catalog__list-item-overlay">
                 <button class="add-to-cart">В корзину</button>
                 <button class="add-to-comparison">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="item-info-wrapper">
+            <div class="catalog__list-item-info-wrapper">
               <h3>Профессиональная селфи-палка</h3>
-              <p><b class="catalog-item-price">1 500руб.</b></p>
+              <p><b class="catalog__list-item-price">1 500руб.</b></p>
             </div>
           </a>
         </li>
-        <li class="catalog-item">
-          <a href="">
+        <li class="catalog__list-item">
+          <a class="catalog__list-item-link" href="">
             <div>
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-              <div class="item-overlay">
+              <div class="catalog__list-item-overlay">
                 <button class="add-to-cart">В корзину</button>
                 <button class="add-to-comparison">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="item-info-wrapper">
+            <div class="catalog__list-item-info-wrapper">
               <h3>Непотопляемая селфи-палка</h3>
-              <b class="catalog-item-price">2 500руб.</b>
+              <b class="catalog__list-item-price">2 500руб.</b>
             </div>
           </a>
         </li>
-        <li class="catalog-item">
-          <a href="">
-            <div class="item-image-wrapper">
-              <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
-              <div class="item-overlay">
+        <li class="catalog__list-item">
+          <a class="catalog__list-item-link" href="">
+            <div class="catalog__list-item-image-wrapper catalog__list-item-image-wrapper--new">
+              <img class="item-image" src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
+              <div class="catalog__list-item-overlay">
                 <button class="add-to-cart">В корзину</button>
                 <button class="add-to-comparison">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="item-info-wrapper">
+            <div class="catalog__list-item-info-wrapper">
               <h3>Селфи-палка «Следуй за мной»</h3>
-              <b class="catalog-item-price">4 900руб.</b>
+              <b class="catalog__list-item-price">4 900руб.</b>
             </div>
           </a>
         </li>
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer visually-hidden">
     <a><img src="img/logo.svg" alt="Лого «Девайс»" width="163" height="35"></a>
     <ul class="user-nav">
       <li><a href="">Валентин Петухов</a></li>

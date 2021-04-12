@@ -1,0 +1,5 @@
+.info-switcher {
+  display: grid;
+  grid-template-columns: 281px 871px;
+  /* grid-template-rows: 160px; */
+}

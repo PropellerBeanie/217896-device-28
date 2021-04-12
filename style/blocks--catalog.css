@@ -1,0 +1,44 @@
+.catalog {
+  padding-left: 60px;
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__list-item-overlay {
+  display: none;
+}
+
+.catalog__list-item:hover .catalog__list-item-overlay {
+  display: initial;
+  position: absolute;
+}
+
+.catalog__list-item a {
+  color: inherit;
+}
+
+.catalog__list-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.catalog__list-item-price {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+}
+
+.catalog__list-item-price b {
+  text-align: center;
+}

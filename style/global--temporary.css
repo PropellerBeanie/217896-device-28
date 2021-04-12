@@ -1,0 +1,33 @@
+/* TEMPORARY */
+
+main {
+
+  outline: 5px solid rgba(255, 0, 0, 0.68);
+  outline-offset: -5px;
+}
+
+/* main {
+  display: grid;
+} */
+
+main > * {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.outline-m {
+  outline: 5px solid rgba(255, 0, 0, 0.68);
+  outline-offset: -5px;
+}
+
+.outline {
+  /* temp */
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.container {
+  /* temp */
+  outline: 5px solid rgba(33, 97, 194, 0.75);
+  outline-offset: -5px;
+}

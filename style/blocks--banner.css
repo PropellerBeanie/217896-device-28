@@ -1,0 +1,14 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.banner-features-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.banner-features-element {
+  display: grid;
+  grid-auto-flow: row;
+}
