@@ -1,5 +1,0 @@
-.item-sections__list {
-  display: grid;
-  grid-template-columns: repeat(6, 160px);
-  grid-template-rows: 160px;
-}

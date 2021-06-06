@@ -1,14 +1,138 @@
-.banner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.banner-wrapper {
+  position: relative;
+  margin-bottom: 76px;
 }
 
-.banner-features-list {
+.banner {
+  display: none;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-top: -146px;
+  height: 528px;
+}
+
+.banner--current {
+  display: grid;
+}
+
+.banner::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 7px;
+  top: 51px;
+  right: 413px;
+  background-color: white;
+}
+
+.banner__number {
+  display: block;
+  position: absolute;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  color: white;
+  font-size: 179px;
+  font-weight: 800;
+  letter-spacing: 0px;
+  right: 47px;
+  top: 0;
+  line-height: 179px;
+}
+
+.banner--1 .banner__image-wrapper {
+  padding-top: 17px;
+}
+
+.banner--2 .banner__image-wrapper {
+  padding-top: 43px;
+}
+
+.banner--3 .banner__image-wrapper {
+  padding-top: 99px;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.banner__info-wrapper {
+  padding-top: 110px;
+}
+
+.banner__big-text {
+  position: relative;
+  display: block;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  margin-bottom: 30px;
+}
+
+.banner__small-text {
+  display: block;
+  margin-bottom: 60px;
+  width: 478px;
+}
+
+.banner__button {
+  padding: 9px 43px;
+  margin-bottom: 60px;
+}
+
+.banner__features-list {
   display: grid;
   grid-auto-flow: column;
+  justify-content: left;
+
 }
 
-.banner-features-element {
+.banner__features-item {
   display: grid;
   grid-auto-flow: row;
+  row-gap: 15px;
+  min-width: 179px;
+  font-family: 'Gilroy', 'Arial', sans-serif;
+}
+
+.features-item__value {
+  font-size: 36px;
+  letter-spacing: 0.1em;
+}
+
+.features-item__name {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.banner__slider-controls {
+  position: absolute;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 18px;
+  bottom: 157px;
+  right: 88px;
+  z-index: 20;
+}
+
+.banner__slider-controls-button {
+  position: relative;
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.banner__slider-controls-button--current::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border: 1px solid black;
+  border-radius: 50%;
+  top: calc(50% - 3px);
+  left: calc(50% - 3px);
 }
