@@ -1,0 +1,251 @@
+/* main header */
+.main-header {
+  color: var(--basic-black);
+}
+
+.main-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 40px;
+  padding: 44px 60px 0 60px;
+  min-height: 300px;
+  background-color: var(--special-yellow);
+}
+
+.main-header-wrapper--secondary {
+  min-height: 186px;
+}
+
+.main-header a {
+  color: var(--basic-black);
+}
+
+.main-header a:hover {
+  color: var(--basic-black-transparent);
+}
+
+.main-header a:active {
+  color: var(--basic-black-extra-transparent);
+}
+
+.main-header__logo-image {
+  position: absolute;
+  top: -20px;
+  left: 60px;
+  width: 163px;
+  height: 35px;
+  filter: brightness(0%);
+}
+
+.user-nav-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.user-nav__search-form {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.user-nav__search-form::before {
+  position: absolute;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  bottom: 15px;
+  background-image: url(../img/icon-search.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-nav__search-input {
+  display: block;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  line-height: 20px;
+  width: 356px;
+  padding: 16px 0 14px 38px;
+}
+
+.user-nav__search-submit-btn {
+  display: none;
+  border: 2px solid var(--basic-black);
+  height: 100%;
+  min-width: 84px;
+  font-weight: inherit;
+  text-transform: uppercase;
+}
+
+.user-nav__search-submit-btn:hover {
+  color: var(--basic-white);
+  background-color: var(--basic-black);
+}
+
+.user-nav__search-submit-btn:active {
+  display: block;
+  outline-style: none;
+  box-shadow: none;
+  color: var(--basic-white-transparent);
+  background-color: var(--basic-black);
+}
+
+.user-nav__search-input:hover {
+  opacity: 0.6;
+}
+
+.user-nav__search-input:focus {
+  opacity: 1;
+  outline-style: none;
+  box-shadow: none;
+}
+
+.user-nav__search-input:focus + .user-nav__search-submit-btn {
+  display: block;
+}
+
+.user-nav__search-input:focus + .user-nav__search-submit-btn::before,
+.user-nav__search-submit-btn:active::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--basic-black);
+}
+
+.user-nav__top-menu-list {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  justify-items: start;
+  column-gap: 41px;
+  grid-auto-flow: column;
+  justify-content: right;
+  width: 500px;
+  align-content: center;
+}
+
+.user-nav__item {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.user-nav__link {
+  padding: 0 0 0 26px;
+  position: relative;
+}
+
+.user-nav__link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  filter: brightness(0%);
+}
+
+.user-nav__link--log-in::before {
+  background-image: url(../img/icon-user.svg);
+  width: 13px;
+  height: 14px;
+  bottom: 2px;
+}
+
+.user-nav__link--compare::before {
+  background-image: url(../img/icon-chart.svg);
+  width: 14px;
+  height: 14px;
+  bottom: 2px;
+}
+
+.user-nav__link--cart::before {
+  background-image: url(../img/icon-cart.svg);
+  width: 10px;
+  height: 10px;
+  bottom: 4px;
+}
+
+.user-nav__link:hover::before {
+  opacity: 0.6;
+}
+
+.user-nav__link:active::before {
+  opacity: 0.3;
+}
+
+.site-nav {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 159px 222px auto;
+  justify-content: right;
+  font-family: var(--ff-gilroy);
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.site-nav__link {
+  display: inline-block;
+}
+
+.site-nav__link--catalog {
+  position: relative;
+  padding-right: 38px;
+}
+
+.site-nav__link--catalog::after {
+  position: absolute;
+  content: "";
+  right: 3px;
+  top: 2px;
+  background-image: url(../img/plus.svg);
+  opacity: 0.3;
+  height: 16px;
+  width: 16px;
+  transition: 0.1s;
+}
+
+.site-nav__link--catalog-open::after {
+  transform: rotate(45deg);
+}
+
+.catalog-nav {
+  display: none;
+  background-color: var(--special-yellow);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 60px 46px;
+  z-index: 1;
+}
+
+.catalog-nav--secondary {
+  bottom: initial;
+  top: 100%;
+  margin-top: -40px;
+}
+
+.catalog-nav--show {
+  display: flex;
+  animation: fadeIn 0.1s;
+}
+
+.catalog-nav__col {
+  margin-right: 61px;
+  display: grid;
+  grid-row-gap: 20px;
+  align-content: start;
+}
+
+.log-out a {
+  opacity: 0.3;
+}
